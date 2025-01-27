@@ -1,0 +1,20 @@
+FROM python:3.13-slim
+
+WORKDIR /app
+
+COPY lvl4.py .
+COPY lv4_curve.py .
+COPY requirements-4.txt .
+COPY utils.py .
+COPY bio.txt .
+COPY words_dictionary.json .
+
+RUN pip install --no-cache-dir -r requirements-4.txt
+
+RUN apt-get update && apt-get install -y socat && rm -rf /var/lib/apt/lists/*
+
+EXPOSE 1404
+
+ENV FLAG="FL1TZ{look_again;)}"
+
+CMD ["socat","-v","-T", "90", "TCP-LISTEN:1404,fork,reuseaddr,bind=0.0.0.0", "EXEC:'python3 lvl4.py'"]

@@ -1,0 +1,125 @@
+{
+  "challenges": [
+    {
+      "name": "Doormat",
+      "description": "Let's make you feel right at home :)",
+      "points": 50,
+      "ciphertext": "SY1GM{U4i3_4_534G_J3_Wh5G_fg4Eg3Q}",
+      "flag": "FL1TZ{H4v3_4_534T_W3_Ju5T_st4Rt3D}"
+    },
+    {
+      "name": "Baby Steps",
+      "description": "The biggest journey starts with a single step",
+      "points": 100,
+      "ciphertext": "QW1EK{1_5e3a_4e_L_e1X3}",
+      "flag": "FL1TZ{1_5t3p_4t_A_t1M3}"
+    },
+    {
+      "name": "Ring Around the Rosies",
+      "description": "Toujours en avant, jamais en arrière",
+      "points": 250,
+      "ciphertext": "KR1BI{CAhbs_4fW_MkrLC_Xg_kTu}",
+      "flag": "FL1TZ{ROund_4nD_RouND_We_gOo}"
+    },
+    {
+      "name": "The Riddler",
+      "description": "I am the truth, untouched and clear,  \nNo twists, no turns, no masks to fear.  \nBefore the cipher does its dance,  \nI stand exposed, in full expanse.  ",
+      "ciphertext": "UW1TH{E1WHIX5_4G3_EH3_S3L_M0_QV_A34GE}",
+      "points": 100,
+      "flag": "FL1TZ{R1DDLE5_4R3_TH3_K3Y_T0_MY_H34RT}"
+    },
+    {
+      "name": "X Gon Give It To Ya",
+      "description": "DMX ain't giving you anything for free, but I might.\n Can you outsmart the randomness? Or will X leave you in the dust, wondering where it all went wrong?",
+      "points": 200,
+      "files": ["xgon.py", "xgon_output.txt"],
+      "flag": "FL1TZ{x0rr_a1n't_4_th3_w3ak}"
+    },
+    {
+      "name": "RSEEE",
+      "description": "We all know what happens when e is small. So you won't need it, right?\nWrap whatever you find in FL1TZ{}",
+      "points": 400,
+      "files": ["RSeee.py", "RSeee_output.txt"],
+      "flag": "FL1TZ{e's_Ea5y_bR0}"
+    },
+    {
+      "name": "Colorblind",
+      "description": "The colors Mason, what do they mean?",
+      "points": 300,
+      "files": ["colorblind.png"],
+      "flag": "FL1TZ{C4ll_4N_4MbulAnc3_but_n0t_f0r_m3}"
+    },
+    {
+      "name": "Aneurysm",
+      "description": "I'm convinced that my 5-year-old nephew is secretly an alien. He drew this on napkin and I'm trying to make sense of it.\nEither I'm insane or he its, which one is it?\nFormat: FL1TZ{WHATEVER_YOU_FIND}",
+      "points": 350,
+      "files": ["aneurysm.png"],
+      "flag": "FL1TZ{TWELVE_IN_ALGEBRA_IS_A_DREAM}"
+    },
+    {
+      "name": "RSi",
+      "description": "A group of scientist just discovered a breakthrogh in the field of public key encryption.\nBy using the power of complex numbers, they were able to supass the security of 2048-bit RSA with a 52-bit Complex key.\nCan you prove them wrong?\nWhen they sent us their findings however, some of the source code got corrupted.\n      ",
+      "points": 600,
+      "files": ["rsi_chall.py", "output.txt"],
+      "flag": "FL1TZ{s0m3BOdy_g3T_G4USS_0ut_of_my_H34D!!!}"
+    },
+    {
+      "name": "RS Ayyooo?!",
+      "description": "Factoring out big numbers might be hard, but factoring out the truth is even harder.\nCan you find the pattern in the chaos?",
+      "points": 1000,
+      "port": 1236,
+      "flag": "FL1TZ{A_2nD_X0R_h1t_th3_Ctf!!}"
+    },
+    {
+      "name": "Out of Sight",
+      "description": "We've been tasked with testing the viability of some shady service which claims to be secure.\nWe managed to get our hands on the source code, but it seems like the developers are trying to hide something...",
+      "points": 300,
+      "files": ["out_of_sight.py"],
+      "port": 1234,
+      "flag": "FL1TZ{n0t_sO_0ut_of_M1nd_ar3n't_wE}"
+    },
+    {
+      "name": "Brainrot",
+      "description": "A bunch of zoomers are being investigated for their involvement in a series of cyber attacks on... Fortnite and Roblox?\nThey've been using some sort of encrypted software to communicate, but we can't seem to crack it.\nCan you help us out?",
+      "points": 300,
+      "port": 1235,
+      "files": ["brain_rot.py"],
+      "flag": "FL1TZ{ma_n3ich_wala_tanya_f8yabou_:(}"
+    },
+    {
+      "name": "Frou5 Li Tnagguez",
+      "description": "The FBI cracked down on a dangerous cybercrime organization that used to go by the name of 'Frou5 Li Tnagguez'.\nThis organization was two steps ahead though, and got rid of all the evidence before the FBI could get to it, except for a single poster that was left behind.",
+      "points": 750,
+      "files": ["flt.tar", "flt.md"],
+      "flag": "FL1TZ{B0RN_2_N4GU3Z_4ND_W1LL_4LW4Y5_N4GU3Z_B4BY}"
+    },
+    {
+      "name": "DMZ 1: Breach",
+      "description": "The year is 2051. After a brutal nuclear war, the world has been left in shambles, ravaged by radiation and chaos.\nYou are the last remaining survivor of a group who took refuge in a bunker. But as supplies and hope starts running low, you decide to put an end to this maddness all on your own.\nThere used to be a research facility, called TerraGroup, that was rumored to have a cure for the radiation. But the facility was abandoned and left to rot.\nCan you find the cure and save the world?",
+      "points": 500,
+      "port": 1401,
+      "flag": "FL1TZ{J3sS3_I_4M_Th3_1_wh0_N0nc3}"
+    },
+    {
+      "name": "DMZ 2: Power Grid",
+      "description": "We're past the gate, but it's only the beginning...\nWe need to get the power back online, but the system is locked down tight.",
+      "points": 750,
+      "port": 1402,
+      "flag": "FL1TZ{D1dn't_kn0w_s1Gn4tur3s_h4d_TH3m_51CK_m0v3S}"
+    },
+    {
+      "name": "DMZ 3: LABS",
+      "description": "As we get closer to the cure, the guardrails get raised even higher.\nWe need to get to access the labs, but how?",
+      "points": 1000,
+      "port": 1403,
+      "flag": "FL1TZ{Try_th4t_1t_T4Rk0V_LABS}"
+    },
+    {
+      "name": "DMZ 4: No Place for Renegades",
+      "description": "This is it. The final stretch. The cure is within reach, but the facility is on high alert.\nCan you make it out alive?",
+      "points": 1500,
+      "port": 1404,
+      "flag": "FLAG=FL1TZ{LLLLLLLLLLLLLLL0O0O0OL}"
+    }
+  ]
+}
