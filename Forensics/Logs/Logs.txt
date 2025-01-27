@@ -1,0 +1,5 @@
+Title : Logs 
+Flag : FL1TZ{L0g5_4r3_Tr34sur3_Tr0v35}
+Description :The system logs hold the key to a mysterious incident. Analyze the clues hidden in the noise and uncover the truth. Can you find what’s been lost?
+Difficulty : Hard 
+Points : 750 

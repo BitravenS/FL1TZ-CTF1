@@ -1,0 +1,5 @@
+Title : Wireshark is COOL 
+Flag : FL1TZ{g0od_j0b_h3ck3r}
+Description : We intercepted some network traffic . Can you retrieve the file and find the flag?
+Difficulty : Easy 
+Points : 200
