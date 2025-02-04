@@ -1,0 +1,9 @@
+Some random guy shared on some social media's account of the author's son 7 years ago the number of a suspicious person . You need to find the username of the author's son social media account and the name of the suspicious person.
+
+FL1TZ{username_NameOfTheSusPerson}
+
+Name of the sus person format : firstname-middlename-lastname
+
+https://www.instagram.com/lamontatkins__/ 
+
+508-625-1275 : Kevin Patrick Flanagan used thisnumber.com from OSINTFramework(tel Numbers -> international ->numberway)

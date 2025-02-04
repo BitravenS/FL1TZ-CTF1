@@ -1,0 +1,6 @@
+Title : HiddenInBetween
+Flag : FL1TZ{Y0u_R34lly_Suck_Broooo}
+Description : Something was hidden inside of this image try and extract it IF YOU CAN
+Difficulty : Hard
+Points : 1000
+

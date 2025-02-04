@@ -1,0 +1,2 @@
+FL1TZ{Ionosphera-M_Roscosmos_400_10/12/2023_PTFE}
+FL1TZ{NameOfSatellite_Developer_NumberOfFrequenciesEmitted_FirstDateOfPlannedLaunch_PrimePropellant}

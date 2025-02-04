@@ -1,0 +1,5 @@
+Name : Rock,Paper,Scissor
+Flag : FL1TZ{4lw4ys_try_t0_find_clu3s}
+Description : Some Data is hidden inside of this logo try and recover it , Commands doesn't always give you the truth but rather hints .
+Difficulty : Medium
+Points : 300

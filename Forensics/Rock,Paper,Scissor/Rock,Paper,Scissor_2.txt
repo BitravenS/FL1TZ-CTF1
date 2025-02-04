@@ -1,5 +1,0 @@
-Name : Rock,Paper,Scissor
-Flag : FL1TZ{4lw4ys_try_t0_find_clu3s}
-Description : Solving the previous challenge was rather EZ by using a simple command try solving this . Hint : use the same command to get clues .
-Difficulty : Medium
-Points : 450

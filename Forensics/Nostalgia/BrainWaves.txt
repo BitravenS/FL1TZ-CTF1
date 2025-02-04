@@ -1,5 +1,0 @@
-Title : BrainWaves
-Flag : FL1TZ{n0st4lg14_r1ght}
-Description : A strange recording lands in your hands, filled with a sequence of rhythmic tones that seem strangely familiar. They remind you of something you hear every day, but you can’t quite place it. Could these tones hold a hidden message? Decode the sequence and uncover the secret buried within the sound.
-Difficulty : Medium 
-Points : 300

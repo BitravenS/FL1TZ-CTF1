@@ -1,5 +1,6 @@
 Title : Puzzle 
 Flag : FL1TZ{9db44eb809f16a46442f7d06e223f11b5df}
-Description : We captured some data being transferred, try and recover my flag 
-Difficulty : Hard 
-Points : 750
+Description : We captured some data being transferred, try and recover my flag .
+Difficulty : Medium
+Points : 450
+

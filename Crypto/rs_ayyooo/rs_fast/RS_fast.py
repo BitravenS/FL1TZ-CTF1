@@ -84,11 +84,11 @@ def main():
             fprint(
                 f"{COLOR_BLUE}Well Done! 256 is the {COLOR_RED}MAXIMUM {COLOR_BLUE}that you'll need. {COLOR_YELLOW}This is a HINT btw ;){COLOR_RESET}"
             )
-        if tries > 1000:
+        if tries > 256:
             fprint(f"{COLOR_RED}I'm not that generous...{COLOR_RESET}")
         elif tries < 1:
             fprint(f"{COLOR_RED}That's... that's not how it works...{COLOR_RESET}")
-            tries = 1001
+            tries = 257
         else:
             break
         fprint(f"Try again: ", line=False)

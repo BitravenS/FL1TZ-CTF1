@@ -1,0 +1,9 @@
+Someone related to this company wrote an article about exploring how the gardians of finance are adapting to the digital battlefield.You're asked to find the name of the first author and the Survey year the insights of the article were derived from . 
+
+FL1TZ{Author_Year}
+
+the author format is FirstName-LastName
+
+FL1TZ{Lamont-Atkins_2023}
+
+https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/the-cyber-clock-is-ticking-derisking-emerging-technologies-in-financial-services
