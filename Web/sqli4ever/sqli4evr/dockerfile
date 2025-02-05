@@ -1,0 +1,19 @@
+FROM php:7.4-apache
+
+WORKDIR /var/www/html
+
+COPY . .
+COPY ./init.sql /docker-entrypoint-initdb.d/init.sql
+
+RUN docker-php-ext-install pdo_mysql
+
+RUN chown -R www-data:www-data /var/www/html && \
+    chmod -R 755 /var/www/html
+
+RUN chmod 777 /docker-entrypoint-initdb.d/init.sql
+
+RUN a2enmod rewrite
+
+EXPOSE 80
+
+CMD ["apache2-foreground"]

@@ -1,0 +1,106 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6; /* Light silver background */
+    color: #333; /* Dark text for contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+/* Logo in the top-right corner */
+header img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Circular logo */
+    border: 3px solid #b71c1c; /* Dark red border for contrast */
+}
+
+/* Title styling */
+h1 {
+    color: #b71c1c; /* Dark red for title */
+    margin: 50px 0;
+    text-align: center;
+    font-size: 24px; /* Slightly larger font */
+}
+
+/* Main content styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Form styling */
+form {
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+input[type="text"], button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: 1px solid #ccc; /* Lighter border */
+    border-radius: 8px; /* Softer corners */
+    background-color: #fff; /* White input background */
+    color: #333; /* Darker text */
+    font-size: 16px; /* Larger input text */
+}
+
+/* Button styling */
+button {
+    background-color: #b71c1c; /* Dark red button */
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px; /* Rounded button corners */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #8b0000; /* Slightly darker red on hover */
+}
+
+/* Styling for list items */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 18px; /* Slightly larger text */
+}
+
+/* Paragraph and content alignment */
+p, ul {
+    max-width: 600px; /* Limit width for better readability */
+    text-align: center;
+}
+
+h2 {
+    color: #b71c1c; /* Dark red for section headers */
+}
+
+/* Flag section with styling */
+h2.flag {
+    background-color: #f9f9f9; /* Light background for the flag message */
+    padding: 15px;
+    border-radius: 8px;
+    color: #b71c1c; /* Dark red text */
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}

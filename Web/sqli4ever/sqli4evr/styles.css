@@ -1,0 +1,68 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6; /* Light silver background */
+    color: #333; /* Dark text for contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login container styling */
+.login-container {
+    background-color: #ffffff; /* White background for contrast */
+    padding: 30px 40px;
+    border-radius: 15px; /* Smooth rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Title styling */
+.login-container h1 {
+    color: #b71c1c; /* Dark red for title */
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Input fields styling */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Login button styling */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #b71c1c; /* Dark red background */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.login-container button:hover {
+    background-color: #8b0000; /* Slightly darker red on hover */
+}
+
+/* Error message styling */
+.error-message {
+    color: #ff0000; /* Red for error messages */
+    margin-top: 15px;
+    font-size: 14px;
+}
