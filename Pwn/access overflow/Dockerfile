@@ -17,4 +17,4 @@ USER user
 
 EXPOSE 1337
 
-CMD socat TCP-LISTEN:1337,reuseaddr,fork EXEC:'timeout 120 ./accessOverflow'
+CMD socat TCP-LISTEN:1337,reuseaddr,fork EXEC:'timeout 20 ./accessOverflow'

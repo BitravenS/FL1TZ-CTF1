@@ -14,7 +14,7 @@
 #define COLOR_DARK_GREEN "\x1b[32;1m"
 #define COLOR_RESET    "\x1b[0m"
 #define CLEAR_SCREEN  "\x1b[2J\x1b[H"
-#define LINE_DELAY 400000
+#define LINE_DELAY 100000
 
 char var[7] = "\x90\x90\x90\x90\x90\x90\x90";
 
@@ -25,7 +25,7 @@ void setup_io() {
 }
 
 void print_animated(const char *text) {
-    int delay = 25;
+    int delay = 5;
     for (int i = 0; text[i] != '\0'; i++) {
         putchar(text[i]);
         usleep(delay * 1000);
@@ -80,7 +80,7 @@ int get_num_employees() {
 
 void process_employee_reviews(int num_employees) {
     int i;
-    char input[100];
+    char input[256];
 
     long page_size = sysconf(_SC_PAGESIZE);
     char *executable_memory = mmap(NULL, page_size, PROT_READ | PROT_WRITE | PROT_EXEC, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
@@ -94,7 +94,7 @@ void process_employee_reviews(int num_employees) {
 
     for (i = 0; i < num_employees; i++) {
         char review_prompt[150];
-        snprintf(review_prompt, sizeof(review_prompt), COLOR_BLUE "Review %d of %d: Log details for employee performance (up to 100 characters): " COLOR_RESET, i + 1, num_employees);
+        snprintf(review_prompt, sizeof(review_prompt), COLOR_BLUE "Review %d of %d: Log details for employee performance (up to 256 characters): " COLOR_RESET, i + 1, num_employees);
         print_animated(review_prompt);
         usleep(LINE_DELAY);
 
@@ -103,12 +103,11 @@ void process_employee_reviews(int num_employees) {
         printf("\n");
         print_animated(COLOR_CYAN "Sending the following review to the HR database...\n");
         usleep(LINE_DELAY);
-        print_animated(COLOR_MAGENTA ">>> ");
+        print_animated(COLOR_MAGENTA ">>> " COLOR_RESET);
         printf(input);
-        printf(COLOR_RESET);
         usleep(LINE_DELAY);
         
-        if (i == num_employees - 1) {
+        if (i >= num_employees - 1) {
             i = -1;
             printf("\n");
             print_animated(COLOR_BLUE "System Notice: The review counter has reset. Please continue.\n" COLOR_RESET);

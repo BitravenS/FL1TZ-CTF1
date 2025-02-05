@@ -13,7 +13,7 @@
 #define COLOR_DARK_GREEN "\x1b[32;1m"
 #define COLOR_RESET   "\x1b[0m"
 #define CLEAR_SCREEN  "\x1b[2J\x1b[H"
-#define LINE_DELAY    400000
+#define LINE_DELAY    50000
 #define MAX_BOOKS     10
 #define MAX_TITLE     64
 #define MAX_CONTENT   1000
@@ -27,7 +27,7 @@ Book *library[MAX_BOOKS];
 int book_count = 0;
 
 void print_animated(const char *text) {
-    int delay = 25;
+    int delay = 3;
     for (int i = 0; text[i] != '\0'; i++) {
         putchar(text[i]);
         fflush(stdout);
@@ -105,12 +105,12 @@ void add_book() {
     }
 
     printf("\n");
-    print_animated(COLOR_GREEN "Enter book title:\n" COLOR_RESET);
+    print_animated(COLOR_BLUE "Enter book title:\n" COLOR_RESET);
     printf(COLOR_BLUE ">\x1b[0m ");
     fgets(new_book->title, MAX_TITLE, stdin);
     new_book->title[strcspn(new_book->title, "\n")] = '\0';
 
-    print_animated(COLOR_MAGENTA "Enter book content (max 1000 characters):\n" COLOR_RESET);
+    print_animated(COLOR_BLUE "Enter book content (max 1000 characters):\n" COLOR_RESET);
     printf(COLOR_BLUE ">\x1b[0m ");
     fgets(new_book->content, MAX_CONTENT - 1, stdin);
     new_book->content[MAX_CONTENT - 1] = '\0';
@@ -152,11 +152,11 @@ void read_book() {
     }
 
     printf("\n");
-    print_animated(COLOR_MAGENTA "Title: " COLOR_RESET);
+    print_animated(COLOR_GREEN "Title: " COLOR_RESET);
     printf(library[choice]->title);
     printf("\n");
     
-    print_animated(COLOR_MAGENTA "Content:\n" COLOR_RESET);
+    print_animated(COLOR_GREEN "Content:\n" COLOR_RESET);
     printf("%s\n", library[choice]->content);
 }
 

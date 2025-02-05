@@ -25,4 +25,4 @@ USER user
 
 EXPOSE 1341
 
-CMD socat TCP-LISTEN:1341,reuseaddr,fork EXEC:'timeout 200 ./echoChamber'
+CMD socat TCP-LISTEN:1341,reuseaddr,fork EXEC:'timeout 120 ./echoChamber'

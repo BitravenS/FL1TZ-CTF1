@@ -1,7 +1,7 @@
 from pwn import*
 
 elf = context.binary = ELF('./echoChamber')
-libc = elf.libc
+libc = ELF('./libc.so.6')
 p = process()
 
 buf2ret = 0x4c

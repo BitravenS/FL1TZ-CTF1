@@ -14,7 +14,7 @@
 #define COLOR_DARK_GREEN "\x1b[32;1m"
 #define COLOR_RESET   "\x1b[0m"
 #define CLEAR_SCREEN  "\x1b[2J\x1b[H"
-#define LINE_DELAY    400000
+#define LINE_DELAY    100000
 
 void setup_io() {
     setbuf(stdout, NULL);
@@ -23,7 +23,7 @@ void setup_io() {
 }
 
 void print_animated(const char *text) {
-    int delay = 25;
+    int delay = 5;
     for (int i = 0; text[i] != '\0'; i++) {
         putchar(text[i]);
         usleep(delay * 1000);
