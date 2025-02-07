@@ -1,0 +1,61 @@
+services:
+  access:
+    image: access
+    container_name: access
+    networks:
+      - pwn
+    ports:
+      - "1337:1337"
+  blind:
+    image: blind
+    container_name: blind
+    networks:
+      - pwn
+    ports:
+      - "1344:1344"
+  echo2:
+    image: echo2
+    container_name: echo2
+    networks:
+      - pwn
+    ports:
+      - "1342:1342"
+  echo1:
+    image: echo1
+    container_name: echo1
+    networks:
+      - pwn
+    ports:
+      - "1341:1341"
+  leak:
+    image: leak
+    container_name: leak
+    networks:
+      - pwn
+    ports:
+      - "1339:1339"
+  review:
+    image: review
+    container_name: review
+    networks:
+      - pwn
+    ports:
+      - "1340:1340"
+  syscal:
+    image: syscal
+    container_name: syscal
+    networks:
+      - pwn
+    ports:
+      - "1338:1338"
+
+  library:
+    image: library
+    container_name: library 
+    networks:
+      - pwn
+    ports:
+      - "1343:1343"
+
+networks:
+  pwn:
