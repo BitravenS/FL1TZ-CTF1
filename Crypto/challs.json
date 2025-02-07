@@ -67,7 +67,7 @@
       "name": "RS Ayyooo?!",
       "description": "Factoring out big numbers might be hard, but factoring out the truth is even harder.\nCan you find the pattern in the chaos?",
       "points": 1000,
-      "port": 1236,
+      "port": 1002,
       "flag": "FL1TZ{A_2nD_X0R_h1t_th3_Ctf!!}"
     },
     {
@@ -75,14 +75,14 @@
       "description": "We've been tasked with testing the viability of some shady service which claims to be secure.\nWe managed to get our hands on the source code, but it seems like the developers are trying to hide something...",
       "points": 300,
       "files": ["out_of_sight.py"],
-      "port": 1234,
+      "port": 1000,
       "flag": "FL1TZ{n0t_sO_0ut_of_M1nd_ar3n't_wE}"
     },
     {
       "name": "Brainrot",
       "description": "A bunch of zoomers are being investigated for their involvement in a series of cyber attacks on... Fortnite and Roblox?\nThey've been using some sort of encrypted software to communicate, but we can't seem to crack it.\nCan you help us out?",
       "points": 300,
-      "port": 1235,
+      "port": 1001,
       "files": ["brain_rot.py"],
       "flag": "FL1TZ{ma_n3ich_wala_tanya_f8yabou_:(}"
     },
@@ -119,7 +119,7 @@
       "description": "This is it. The final stretch. The cure is within reach, but the facility is on high alert.\nCan you make it out alive?",
       "points": 1500,
       "port": 1404,
-      "flag": "FLAG=FL1TZ{LLLLLLLLLLLLLLL0O0O0OL}"
+      "flag": "FL1TZ{LLLLLLLLLLLLLLL0O0O0OL}"
     }
   ]
 }

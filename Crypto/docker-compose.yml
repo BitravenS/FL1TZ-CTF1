@@ -5,7 +5,7 @@ services:
     networks:
       - crypto
     ports:
-      - "1235:1235"
+      - "1001:1001"
     environment:
       - FLAG=FL1TZ{ma_n3ich_wala_tanya_f8yabou_:(}
   out-of-sight:
@@ -14,7 +14,7 @@ services:
     networks:
       - crypto
     ports:
-      - "1234:1234"
+      - "1000:1000"
     environment:
       - FLAG=FL1TZ{n0t_sO_0ut_of_M1nd_ar3n't_wE}
   rsayo:
@@ -23,7 +23,7 @@ services:
     networks:
       - crypto
     ports:
-      - "1236:1236"
+      - "1002:1002"
     environment:
       - FLAG=FL1TZ{A_2nD_X0R_h1t_th3_Ctf!!}
   rsayo-fast:
@@ -32,7 +32,7 @@ services:
     networks:
       - crypto
     ports:
-      - "1237:1237"
+      - "1003:1003"
     environment:
       - FLAG=FL1TZ{A_2nD_X0R_h1t_th3_Ctf!!}
   lvl1:
@@ -41,7 +41,7 @@ services:
     networks:
       - crypto
     ports:
-      - "1401:1401"
+      - "1005:1005"
     environment:
       - FLAG=FL1TZ{J3sS3_I_4M_Th3_1_wh0_N0nc3}
   lvl2:
@@ -50,7 +50,7 @@ services:
     networks:
       - crypto
     ports:
-      - "1402:1402"
+      - "1007:1007"
     environment:
       - FLAG=FL1TZ{D1dn't_kn0w_s1Gn4tur3s_h4d_TH3m_51CK_m0v3S}
   lvl3:
@@ -59,7 +59,7 @@ services:
     networks:
       - crypto
     ports:
-      - "1403:1403"
+      - "1009:1009"
     environment:
       - FLAG=FL1TZ{Try_th4t_1t_T4Rk0V_LABS}
   lvl4:
@@ -68,7 +68,7 @@ services:
     networks:
       - crypto
     ports:
-      - "1404:1404"
+      - "1011:1011"
     environment:
       - FLAG=FL1TZ{LLLLLLLLLLLLLLL0O0O0OL}
   lvl1-fast:
@@ -77,7 +77,7 @@ services:
     networks:
       - crypto
     ports:
-      - "1411:1411"
+      - "1006:1006"
     environment:
       - FLAG=FL1TZ{J3sS3_I_4M_Th3_1_wh0_N0nc3}
   lvl2-fast:
@@ -86,7 +86,7 @@ services:
     networks:
       - crypto
     ports:
-      - "1412:1412"
+      - "1008:1008"
     environment:
       - FLAG=FL1TZ{D1dn't_kn0w_s1Gn4tur3s_h4d_TH3m_51CK_m0v3S}
   lvl3-fast:
@@ -95,7 +95,7 @@ services:
     networks:
       - crypto
     ports:
-      - "1413:1413"
+      - "1010:1010"
     environment:
       - FLAG=FL1TZ{Try_th4t_1t_T4Rk0V_LABS}
   lvl4-fast:
@@ -104,7 +104,7 @@ services:
     networks:
       - crypto
     ports:
-      - "1414:1414"
+      - "1012:1012"
     environment:
       - FLAG=FL1TZ{LLLLLLLLLLLLLLL0O0O0OL}
 

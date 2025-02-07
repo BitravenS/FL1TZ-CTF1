@@ -11,8 +11,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN apt-get update && apt-get install -y socat && rm -rf /var/lib/apt/lists/*
 
-EXPOSE 1401
+EXPOSE 1005
 
 ENV FLAG="FL1TZ{look_again;)}"
 
-CMD ["socat","-v","-T", "90", "TCP-LISTEN:1401,fork,reuseaddr,bind=0.0.0.0", "EXEC:'python3 lvl1.py'"]
+CMD ["socat","-v","-T", "90", "TCP-LISTEN:1005,fork,reuseaddr,bind=0.0.0.0", "EXEC:'python3 lvl1.py'"]

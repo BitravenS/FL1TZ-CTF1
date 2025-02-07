@@ -197,7 +197,7 @@ def level3():
     )
     dialogue3()
     fprint(
-        f"\n{COLOR_YELLOW}! Connect on port 1413 to disable animations, colors and dialogue (PS: They might contain hints).{COLOR_RESET}\n"
+        f"\n{COLOR_YELLOW}! Connect on port 1010 to disable animations, colors and dialogue (PS: They might contain hints).{COLOR_RESET}\n"
     )
     fprint(
         f"""{COLOR_BLUE}

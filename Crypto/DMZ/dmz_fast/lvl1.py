@@ -102,9 +102,6 @@ def level1():
     )
 
     fprint(
-        f"\n{COLOR_YELLOW}! Connect on port 1411 to disable animations, colors and dialogue (PS: They might contain hints).{COLOR_RESET}\n"
-    )
-    fprint(
         f"""{COLOR_GREEN}
 
     +-------------------+

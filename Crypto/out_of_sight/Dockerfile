@@ -9,8 +9,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN apt-get update && apt-get install -y socat && rm -rf /var/lib/apt/lists/*
 
-EXPOSE 1234
+EXPOSE 1000
 
 ENV FLAG="FL1TZ{look_again;)}"
 
-CMD ["socat","-v","-T", "90", "TCP-LISTEN:1234,fork,reuseaddr,bind=0.0.0.0", "EXEC:'python3 out_of_sight.py'"]
+CMD ["socat","-v","-T", "90", "TCP-LISTEN:1000,fork,reuseaddr,bind=0.0.0.0", "EXEC:'python3 out_of_sight.py'"]

@@ -102,7 +102,7 @@ def main():
         fprint(f"Try again: ", line=False)
     fprint(f"Fair enough, {COLOR_YELLOW}here we go!{COLOR_RESET}")
     fprint(
-        f"{COLOR_GREEN}PS:\n\t-Type 'exit' to exit\n\t-Connect on port 1237 for less animations!{COLOR_RESET}"
+        f"{COLOR_GREEN}PS:\n\t-Type 'exit' to exit\n\t-Connect on port 1003 for less animations!{COLOR_RESET}"
     )
 
     for _ in range(tries):

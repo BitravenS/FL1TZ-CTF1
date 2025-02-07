@@ -9,8 +9,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN apt-get update && apt-get install -y socat && rm -rf /var/lib/apt/lists/*
 
-EXPOSE 1237
+EXPOSE 1003
 
 ENV FLAG="FL1TZ{look_again;)}"
 
-CMD ["socat","-v","-T", "90", "TCP-LISTEN:1237,fork,reuseaddr,bind=0.0.0.0", "EXEC:'python3 RS_fast.py'"]
+CMD ["socat","-v","-T", "90", "TCP-LISTEN:1003,fork,reuseaddr,bind=0.0.0.0", "EXEC:'python3 RS_fast.py'"]
