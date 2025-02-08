@@ -8,10 +8,8 @@ services:
       - pwn
     ports:
       - "1016:1016"
-    resources:
-      limits:
-        cpus: '0.5'  # Limit to 0.5 CPU cores
-        memory: 512M  # Limit to 512 MB of RAM
+    cpus: '0.5'  # Limit to 0.5 CPU cores
+    mem_limit: 512m  # Limit to 512 MB of RAM
 
   blind:
     build: ./blindfolded
@@ -20,10 +18,8 @@ services:
       - pwn
     ports:
       - "1017:1017"
-    resources:
-      limits:
-        cpus: '0.5'
-        memory: 512M
+    cpus: '0.5'
+    mem_limit: 512m
 
   echo2:
     build: ./echo_chamber-v2
@@ -32,10 +28,8 @@ services:
       - pwn
     ports:
       - "1019:1019"
-    resources:
-      limits:
-        cpus: '0.5'
-        memory: 512M
+    cpus: '0.5'
+    mem_limit: 512m
 
   echo1:
     build: ./echo_chamber
@@ -44,10 +38,8 @@ services:
       - pwn
     ports:
       - "1018:1018"
-    resources:
-      limits:
-        cpus: '0.5'
-        memory: 512M
+    cpus: '0.5'
+    mem_limit: 512m
 
   leak:
     build: ./leak
@@ -56,10 +48,8 @@ services:
       - pwn
     ports:
       - "1020:1020"
-    resources:
-      limits:
-        cpus: '0.5'
-        memory: 512M
+    cpus: '0.5'
+    mem_limit: 512m
 
   review:
     build: ./review_hub
@@ -68,10 +58,8 @@ services:
       - pwn
     ports:
       - "1022:1022"
-    resources:
-      limits:
-        cpus: '0.5'
-        memory: 512M
+    cpus: '0.5'
+    mem_limit: 512m
 
   syscal:
     build: ./syscalator
@@ -80,10 +68,8 @@ services:
       - pwn
     ports:
       - "1023:1023"
-    resources:
-      limits:
-        cpus: '0.5'
-        memory: 512M
+    cpus: '0.5'
+    mem_limit: 512m
 
   library:
     build: ./library
@@ -92,10 +78,8 @@ services:
       - pwn
     ports:
       - "1021:1021"
-    resources:
-      limits:
-        cpus: '0.5'
-        memory: 512M
+    cpus: '0.5'
+    mem_limit: 512m
 
 networks:
   pwn:
