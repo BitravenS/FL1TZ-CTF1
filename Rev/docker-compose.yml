@@ -1,0 +1,23 @@
+services:
+  maze2:
+    build: ./maze2-700
+    container_name: maze2
+    networks:
+      - rev
+    ports:
+      - "1037:1037"
+    cpus: '0.5'  # Limit to 0.5 CPU cores
+    mem_limit: 512m  # Limit to 512 MB of RAM
+
+  maze1:
+    build: ./maze-300
+    container_name: maze1
+    networks:
+      - rev
+    ports:
+      - "1036:1036"
+    cpus: '0.5'
+    mem_limit: 512m
+
+networks:
+  rev:
