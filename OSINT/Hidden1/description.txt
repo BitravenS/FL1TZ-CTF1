@@ -1,5 +1,0 @@
-This image is taken in Kazakhstan, and we're trying to identify a specific company. Now, imagine if the 9/11 attack had happened in Kazakhstan—what buildings would have been targeted? The buildings in question are within the area shown in the photo.
-
-Here's a twist: when people are asked to pick a random number between 0 and 10, they often tend to choose a particular number, let’s call it x. The company we're looking for is located on the (10 + x)th floor. Can you figure out the name of the company?
-
-FL1TZ{McKinsey & Company}

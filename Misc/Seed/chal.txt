@@ -1,7 +1,0 @@
-Title : Seed
-FLAG : FL1TZ{D0_R3_M1_F4_S0L_L4_S1_D000000000000}
-Description : Hidden between sharps and flats——a tune that reveals the truth.
-Difficulty : Medium 
-Points : 200
-
-

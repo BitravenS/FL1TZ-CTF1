@@ -1,6 +1,0 @@
-Title : Outlaw 
-Flag : FL1TZ{D0_Y0u_B3l13v3_1n_M4g1c?}
-Description : UN1Y:?E0{F0g{X3n13k3{1b{M4i1jZ+
-Difficulty : Medium 
-Points : 350
-

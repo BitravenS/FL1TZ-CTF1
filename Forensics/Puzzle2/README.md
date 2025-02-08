@@ -1,1 +1,0 @@
-script.py is given

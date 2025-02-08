@@ -1,5 +1,0 @@
-Title : The Slow Reveal
-Flag : FL1TZ{T1m3_L3aks}
-Description : A high-tech vault secures its treasures with a 12 character password . But security can sometimes betray itself. We intercepted a series of login attempts, but something seem suspicious. Could you help me uncover the vault's secret? 
-Difficulty : Medium
-Points : 450

@@ -1,5 +1,0 @@
-Title : Puzzle2
-Flag : FL1TZ{GREATEST_MANGA_EVER}
-Description : My friend said he sent a photo but Idk wtf are these files he sent . Help me recover it .
-Difficulty : Hard 
-Points : 1000
