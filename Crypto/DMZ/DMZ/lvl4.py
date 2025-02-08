@@ -126,12 +126,13 @@ def level4():
         fprint(
             f"""> Running tests: generating signatures of the keyword "{word}"...\n"""
         )
-        sigs = signature_gen(l4_priv_key, 10, word, 128)["signatures"]
+        sigs = signature_gen(l4_priv_key, 5, word, 128)["signatures"]
         for i, sig in enumerate(sigs):
             encoded = encode_signature(sig["r"], sig["s"])
             used_sigs.append(encoded)
             fprint(
-                f"""{COLOR_YELLOW}>>> Signature {i}{COLOR_RESET}: {encoded}\n""", 0.001
+                f"""{COLOR_YELLOW}>>> Signature {i+1}{COLOR_RESET}: {encoded}\n""",
+                0.001,
             )
         fprint(
             f"{COLOR_RED}> WARNING: Due to the unusally large key size, the hardware could only generate 384-bits of random nonces{COLOR_RESET}"

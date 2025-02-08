@@ -267,7 +267,7 @@ def lllmao(data):
 
 def main():
     priv, pub = gen_keypair()
-    data = signature_gen(priv, 14, "Hello", 128)
+    data = signature_gen(priv, 5, "Hello", 128)
     print(data)
     lllmao(data)
 
