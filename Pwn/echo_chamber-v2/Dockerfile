@@ -23,6 +23,6 @@ RUN chown -R root:user /ctf && \
 
 USER user
 
-EXPOSE 1342
+EXPOSE 1019
 
-CMD socat TCP-LISTEN:1342,reuseaddr,fork EXEC:'timeout 120 ./echoChamber-v2'
+CMD socat TCP-LISTEN:1019,reuseaddr,fork EXEC:'timeout 120 ./echoChamber-v2'

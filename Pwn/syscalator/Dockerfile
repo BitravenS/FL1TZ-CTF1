@@ -15,6 +15,6 @@ RUN chown -R root:user /ctf && \
 
 USER user
 
-EXPOSE 1338
+EXPOSE 1023
 
-CMD socat TCP-LISTEN:1338,reuseaddr,fork EXEC:'timeout 40 ./syscalator'
+CMD socat TCP-LISTEN:1023,reuseaddr,fork EXEC:'timeout 40 ./syscalator'

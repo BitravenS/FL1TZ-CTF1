@@ -1,61 +1,101 @@
+version: '3.8'
+
 services:
   access:
-    image: access
+    build: ./access_overflow
     container_name: access
     networks:
       - pwn
     ports:
-      - "1337:1337"
+      - "1016:1016"
+    resources:
+      limits:
+        cpus: '0.5'  # Limit to 0.5 CPU cores
+        memory: 512M  # Limit to 512 MB of RAM
+
   blind:
-    image: blind
+    build: ./blindfolded
     container_name: blind
     networks:
       - pwn
     ports:
-      - "1344:1344"
+      - "1017:1017"
+    resources:
+      limits:
+        cpus: '0.5'
+        memory: 512M
+
   echo2:
-    image: echo2
+    build: ./echo_chamber-v2
     container_name: echo2
     networks:
       - pwn
     ports:
-      - "1342:1342"
+      - "1019:1019"
+    resources:
+      limits:
+        cpus: '0.5'
+        memory: 512M
+
   echo1:
-    image: echo1
+    build: ./echo_chamber
     container_name: echo1
     networks:
       - pwn
     ports:
-      - "1341:1341"
+      - "1018:1018"
+    resources:
+      limits:
+        cpus: '0.5'
+        memory: 512M
+
   leak:
-    image: leak
+    build: ./leak
     container_name: leak
     networks:
       - pwn
     ports:
-      - "1339:1339"
+      - "1020:1020"
+    resources:
+      limits:
+        cpus: '0.5'
+        memory: 512M
+
   review:
-    image: review
+    build: ./review_hub
     container_name: review
     networks:
       - pwn
     ports:
-      - "1340:1340"
+      - "1022:1022"
+    resources:
+      limits:
+        cpus: '0.5'
+        memory: 512M
+
   syscal:
-    image: syscal
+    build: ./syscalator
     container_name: syscal
     networks:
       - pwn
     ports:
-      - "1338:1338"
+      - "1023:1023"
+    resources:
+      limits:
+        cpus: '0.5'
+        memory: 512M
 
   library:
-    image: library
-    container_name: library 
+    build: ./library
+    container_name: library
     networks:
       - pwn
     ports:
-      - "1343:1343"
+      - "1021:1021"
+    resources:
+      limits:
+        cpus: '0.5'
+        memory: 512M
 
 networks:
   pwn:
