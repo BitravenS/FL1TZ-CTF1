@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  web:
+    build: .
+    container_name: flask_app
+    ports:
+      - "1029:5000"
+    environment:
+      - FLASK_ENV=production
+    depends_on:
+      - redis
+    volumes:
+      - .:/app
+
+volumes:
+  redis_data:

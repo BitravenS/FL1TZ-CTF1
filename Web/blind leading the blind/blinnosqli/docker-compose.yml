@@ -4,7 +4,7 @@ services:
       context: .
     container_name: ctf_app
     ports:
-      - "8083:8083"
+      - "1033:8083"
     depends_on:
       - mongodb
     volumes:
@@ -24,3 +24,4 @@ services:
       - MONGO_URL=mongodb://mongodb:27017/ctf_challenge
 volumes:
   mongo_data:
+x

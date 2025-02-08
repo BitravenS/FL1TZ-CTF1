@@ -3,6 +3,6 @@ services:
   browsershot:
     build: .
     ports:
-      - "8080:8000"
+      - "1034:8000"
     volumes:
       - .:/var/www/html

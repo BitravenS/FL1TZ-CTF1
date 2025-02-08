@@ -4,7 +4,7 @@ services:
   web:
     build: .
     ports:
-      - "8080:80"
+      - "1032:80"
     volumes:
       - ./login.php:/var/www/html/login.php
       - ./style.css:/var/www/html/style.css

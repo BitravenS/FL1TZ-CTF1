@@ -146,4 +146,4 @@ def list_users():
     return {user: {"uuid": users[user]["uuid"]} for user in ["test", "admin"] if user in users}
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8055)
+    app.run(host="0.0.0.0", port=1030)

@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "1030:1030"
+    volumes:
+      - .:/app
+    environment:
+      FLASK_ENV: production
+    networks:
+      - flask-network
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'  
+          memory: '225M'  
+
+networks:
+  flask-network:
+    driver: bridge

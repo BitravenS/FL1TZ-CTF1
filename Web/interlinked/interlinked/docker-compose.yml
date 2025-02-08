@@ -3,7 +3,12 @@ services:
   ctf-challenge:
     build: .
     ports:
-      - "5000:5000"
+      - "1035:5000"
     volumes:
       - ./flag.txt:/flag.txt:ro  
     restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5' 
+          memory: 512M  

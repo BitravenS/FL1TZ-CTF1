@@ -54,5 +54,5 @@ app.get('/showalbum', async (req, res) => {
 });
 
 app.listen(port, '0.0.0.0', () => {
-    console.log(`Listening on http://localhost:${port}`);
+    console.log(`Listening on http://localhost:1027}`);
 });
