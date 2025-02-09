@@ -15,12 +15,12 @@ WORKDIR /ctf
 RUN useradd -m user
 
 # Copy challenge files
-COPY challenge/blind /ctf/blind
+COPY challenge/reviewHub /ctf/reviewHub
 COPY challenge/flag.txt /ctf/flag.txt
 
 # Set permissions
 RUN chown -R root:user /ctf && \
-    chmod 750 /ctf/blind && \
+    chmod 750 /ctf/reviewHub && \
     chmod 440 /ctf/flag.txt
 
 # Switch to the non-root user
