@@ -1,7 +1,0 @@
-The author shared a post of how the US government infiltrated a well known organization . You're asked to find the name of the organization , its report date and the common weapon used .
-
-FL1TZ{ORGANIZATION_DD/MM/YY_Weapon}
-
-FL1TZ{ISIS_26/09/2019_Malware}
-
-https://www.npr.org/2019/09/26/763545811/how-the-u-s-hacked-isis

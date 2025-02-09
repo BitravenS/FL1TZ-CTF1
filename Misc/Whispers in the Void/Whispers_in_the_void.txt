@@ -1,5 +1,0 @@
-Title : R34
-Flag : FL1TZ{z3r0_w1dth_ch4r4t3r5}
-Description :  At first glance, it appears to be a simple text file, but something feels off. The operative is known for using unconventional methods to hide their secrets. Can you uncover the hidden message buried within the text?
-Difficulty : Easy
-Points : 150 
