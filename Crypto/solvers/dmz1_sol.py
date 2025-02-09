@@ -3,8 +3,8 @@ import ecdsa
 import base64
 from Crypto.Util.number import bytes_to_long
 
-HOST = "localhost"
-PORT = 1411
+HOST = "ctf.fl1tz.me"
+PORT = 1006
 
 io = remote(HOST, PORT)
 

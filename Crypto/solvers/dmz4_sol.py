@@ -11,8 +11,8 @@ from cryptography.hazmat.primitives import serialization
 from pprint import pprint
 from asn1crypto.core import Sequence, Integer
 
-HOST = "localhost"
-PORT = 1414
+HOST = "ctf.fl1tz.me"
+PORT = 1012
 
 io = remote(HOST, PORT)
 

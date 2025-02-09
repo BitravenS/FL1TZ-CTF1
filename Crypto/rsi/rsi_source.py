@@ -9,7 +9,7 @@ def pad_bytes(data, block_size):
     return padded_data
 
 
-FLAG = pad_bytes(b"FL1TZ{s0m3BOdy_g3T_G4USS_0ut_of_my_H34D!!!}", 8)
+FLAG = pad_bytes(b"FL1TZ{??????????????????????????}", 8)
 
 ZI = GaussianIntegers()
 
@@ -50,9 +50,9 @@ def gen_gaussian_prime(bits):
 
 
 def gaussian_powmod(z, exponent, modulus):
-    result = ZI(1)  # Initialize result to 1
-    z = ZI(z)  # Ensure z is a Gaussian integer
-    modulus = ZI(modulus)  # Ensure modulus is a Gaussian integer
+    result = ZI(1)
+    z = ZI(z)
+    modulus = ZI(modulus)
 
     while exponent > 0:
         if exponent % 2 == 1:

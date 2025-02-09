@@ -1,18 +1,19 @@
 from Crypto.Util.number import long_to_bytes, bytes_to_long
 from pwn import xor
 
-xs = [1911590242, 172769011, 9897904, 3871741481, 701373870, 3160528719, 2606558940]
 enc = [
-    b"7\xbc\xbc6",
-    b"!\xc7\xcb\xa1",
-    b"\x9e\xc9\\g",
-    b";\x132[",
-    b"|\x87W\xf5",
-    b"\xf7\xe1\x80\xb9",
-    b"7\xefZo",
+    b"37bcbc36",
+    b"21c7cba1",
+    b"9ec95c67",
+    b"3b13325b",
+    b"7c8757f5",
+    b"f7e180b9",
+    b"37ef5a6f",
 ]
 
+
 flag = ["FL1T"]
+enc = [bytes.fromhex(x.decode()) for x in enc]
 
 
 class Random:

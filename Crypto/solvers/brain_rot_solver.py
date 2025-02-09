@@ -2,8 +2,8 @@ from pwn import *
 from Crypto.Util.Padding import pad, unpad
 import binascii
 
-HOST = "localhost"
-PORT = 1235
+HOST = "ctf.fl1tz.me"
+PORT = 1001
 
 io = remote(HOST, PORT)
 

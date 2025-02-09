@@ -26,7 +26,7 @@ def decode_image_to_string(image_path, square_size=5):
 
 
 def main():
-    image_path = "../colorblind/colorblind.png"
+    image_path = "/home/bitraven/Documents/FL1TZ-CTF1/Crypto/colorblind/colorblind.png"
 
     square_size = 20
     decoded_string = decode_image_to_string(image_path, square_size)
