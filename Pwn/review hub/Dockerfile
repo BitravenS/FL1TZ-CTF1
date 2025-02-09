@@ -30,4 +30,4 @@ USER user
 EXPOSE 1022
 
 # Run the challenge
-CMD socat TCP-LISTEN:1022,reuseaddr,fork EXEC:'timeout 180 ./blind'
+CMD socat TCP-LISTEN:1022,reuseaddr,fork EXEC:'timeout 180 ./reviewHub'
