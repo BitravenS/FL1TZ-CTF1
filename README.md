@@ -1,7 +1,7 @@
 # 🛠️ FL1TZ-CTF1
 
 Welcome to the official repository for the **FL1TZ 2025 Capture The Flag (CTF) challenges**! This repository contains all the challenges, solutions, and resources for the FL1TZ CTF event. Below, you'll find everything you need to know about the repository structure, challenge categories, and how to get started.
-### Repo challenges are outdated! you find the newer versions in [Zyyz's github soon](https://github.com/Zyyz2)
+### Foren and Crypto challenges are outdated! you find the newer versions in [Zyyz's github soon](https://github.com/Zyyz2) and [my other repor]([url](https://github.com/BitravenS/FL1TZ-CTF1_Crypto))
 
 ---
 
